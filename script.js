@@ -1,5 +1,3 @@
-import { default as books} from '.booksModule.js';
-
 const bookCollection = {
   books: [
     { image: "image-url1.jpg", title: "The Secret of Dreams", author: "Alex Reed", price: 150 },
@@ -15,24 +13,23 @@ const bookCollection = {
   ]
 };
 
+const showBooks = document.querySelector(".search-result-box");
+
 // Funktion för att skapa och visa bokkort
 let displayBookCards = () => {
-  bookCollection.books.forEach(book => {
-    // Skapar en ny knapp
-    const button = document.createElement('button');
-    button.style.display = 'block'; // Sätter display egenskapen för att visa knapparna vertikalt
-    button.style.margin = '10px 0'; // Lägger till lite marginal för utseende
+  let shuffledBooks = [...bookCollection.books].sort(() => 0.5 - Math.random()); // Blanda böckerna
+  let selectedBooks = shuffledBooks.slice(0, 4); // Välj de första fyra böckerna efter blandningen
 
-    // Lägger till bokinformation i knappen
-    button.innerHTML = `
-      <img src="${book.image}" alt="${book.title}" style="width: 100px; height: auto;"><br>
-      <strong>Title:</strong> ${book.title}<br>
-      <strong>Author:</strong> ${book.author}<br>
-      <strong>Price:</strong> ${book.price} SEK
-    `;
+  selectedBooks.forEach(book => {
+    let card = document.createElement("div");
+    
+    card.innerHTML = `
+      <img src="${book.image}" alt="${book.title}">
+      <h3><a href="${book.url}">${book.title}</a></h3>
+      <p>${book.author}</p>
+      <button>${book.price} kr <i class="fas fa-shopping-bag"></button>`;
 
-    // Lägger till knappen i dokumentets body
-    document.body.appendChild(button);
+      showBooks.append(card);
   });
 }
 
