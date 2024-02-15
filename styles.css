@@ -62,22 +62,27 @@ body {
   justify-content: space-between;
 
   .filter-box {
-    width: 15%;
+    width: 18%;
     border: 0.4px solid lightgray;
     height: 200px;
-
-    .filter-header-category {
-      border: 0.4px solid lightgray;
-      font-size: 14px;
-      background-color: lightgray;
-    }
-    .filter-category {
-      border: 1px solid gray;
-      font-size: 14px;
-      border: 0.4px solid lightgray;
-    }
+    font-weight: 400;
+    line-height: 1.25;
+    color: #100a24;
+    font-size: 16px;
   }
-
+  
+  .filter-header-category {
+    border: 0.4px solid lightgray;
+    font-size: 14px;
+    background-color: lightgray;
+  }
+  
+  .filter-category {
+    border: 1px solid gray;
+    font-size: 14px;
+    border: 0.4px solid lightgray;
+  }
+  
   .search-result-box {
     width: 80%;
     display: flex;
