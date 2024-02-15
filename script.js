@@ -29,7 +29,7 @@ let displayBookCards = () => {
       <img class="book-cover" src="${book.image}" alt="${book.title}">
       <h3 class="book-title" ><a href="${book.url}">${book.title}</a></h3>
       <p class="book-author" >${book.author}</p>
-      <button class="buy-link-button">${book.price} kr <i class="fas fa-shopping-bag"></button>`
+      <span class="buy-link-button">${book.price} kr <i class="fas fa-shopping-bag"></span>`
       ;
 
       showBooks.append(card);
