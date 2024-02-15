@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;    
 }
 
 .mainContainer{
@@ -56,28 +57,5 @@ body{
         width:80%;
         border: 0.4px solid lightgray;
         height: 800px;
-        display: flex;
-        flex-direction: column;
-
-
-        .sökt-på{
-            border: 0.4px solid lightgray;
-            p{
-                margin: auto;
-                padding: auto;
-                height: 100px;
-                text-align: center;
-                margin-top: 30px;
-            }
-        }
-
-        .search-results{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        
-        
     }
 }
-    }
