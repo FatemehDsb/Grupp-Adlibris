@@ -1,11 +1,8 @@
-
-
-
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;    
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .mainContainer{
@@ -57,6 +54,59 @@ body{
         width:80%;
         border: 0.4px solid lightgray;
         height: 800px;
+.container {
+  border: 0.4px solid lightgray;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .filter-box {
+    width: 15%;
+    border: 0.4px solid lightgray;
+    height: 200px;
+
+    .filter-header-category {
+      border: 0.4px solid lightgray;
+      font-size: 14px;
+      background-color: lightgray;
+    }
+    .filter-category {
+      border: 1px solid gray;
+      font-size: 14px;
+      border: 0.4px solid lightgray;
+    }
+  }
+
+  .search-result-box {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    border: 0.4px solid lightgray;
+    gap: 12px;
+    align-items: end;
+
+    .book-cover {
+      height: 300px;
+      width: 200px;
+      object-fit: cover;
+      object-position: center;
     }
 }
+}
+  }
+}
+
+.discount-banner {
+  background-color: #e81121; /* Red background color */
+  color: #ffffff; /* White font color */
+  text-align: center;
+  padding: 10px; /* Adjust padding for better visibility */
+  font-size: 16px;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  width: 100%;
 }
