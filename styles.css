@@ -5,6 +5,53 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.mainContainer{
+    border: 0.4px solid lightgray;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    .search-book-box{
+        margin: auto;
+        padding: auto;
+        font-size: 10px;
+    }
+
+    .container{
+    border: 0.4px solid lightgray;
+    font-family: "Montserrat",sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+    .filter-box{
+        width: 18%;
+        border: 0.4px solid lightgray;
+        height: 200px;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #100a24;
+        font-size: 16px;
+    
+
+
+        .filter-header-category{
+            border: 0.4px solid lightgray;
+            font-size: 14px;
+            background-color: lightgray;
+            
+        }
+        .filter-category{
+           border: 1px solid gray;
+           font-size: 14px;
+           border: 0.4px solid lightgray;
+
+        }
+    }
+    
+    .search-result-box{
+        width:80%;
+        border: 0.4px solid lightgray;
+        height: 800px;
 .container {
   border: 0.4px solid lightgray;
   margin-left: 20px;
@@ -45,6 +92,8 @@ body {
       object-fit: cover;
       object-position: center;
     }
+}
+}
   }
 }
 
@@ -58,4 +107,5 @@ body {
   height: 20px;
   line-height: 20px;
   width: 100%;
+}
 }
