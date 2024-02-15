@@ -5,39 +5,46 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 .container{
+    border: 0.4px solid lightgray;
 
-    margin: 20px 20px;    
+    margin-left: 20px;
+    margin-right: 20px;
+
+       
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+ 
 
 
     .filter-box{
 
-        width: 20%;
-        border: 1px solid black;
+        width: 15%;
+        border: 0.4px solid lightgray;
         height: 200px;
+    
 
 
         .filter-header-category{
-            background-color: gray;
-            font-size: 10px;
+            border: 0.4px solid lightgray;
+            font-size: 14px;
+            background-color: lightgray;
             
         }
         .filter-category{
            border: 1px solid gray;
-           font-size: 10px;
+           font-size: 14px;
+           border: 0.4px solid lightgray;
 
         }
     }
     
     .search-result-box{
-        width:75%;
-        border: 1px solid red;
+        width:80%;
+        border: 0.4px solid lightgray;
         height: 800px;
     }
 }
