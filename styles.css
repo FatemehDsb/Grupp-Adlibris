@@ -89,13 +89,30 @@ body {
 }
 
 .discount-banner {
-  background-color: #e81121;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  position: relative;
-  height: 20px;
-  line-height: 20px;
-  width: 100%;
-}
+    background-color: #e81121; /* Red background color */
+    color: #ffffff; /* White font color */
+    text-align: center;
+    padding: 10px; /* Adjust padding for better visibility */
+    font-size: 16px;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content:space-between;
+  }
+
+
+  .header-menu__toggler__icon span {
+    background: #191919;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 24px;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+  }
