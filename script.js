@@ -32,7 +32,7 @@ let displayBookCards = () => {
       <button class="buy-link-button">${book.price} kr <i class="fas fa-shopping-bag"></button>`
       ;
 
-      document.body.append(card);
+      showBooks.append(card);
   });
 }
 
