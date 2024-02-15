@@ -13,6 +13,8 @@ const bookCollection = {
   ]
 };
 
+const showBooks = document.querySelector(".search-result-box");
+
 // Funktion för att skapa och visa bokkort
 let displayBookCards = () => {
   let shuffledBooks = [...bookCollection.books].sort(() => 0.5 - Math.random()); // Blanda böckerna
@@ -27,7 +29,7 @@ let displayBookCards = () => {
       <p>${book.author}</p>
       <button>${book.price} kr <i class="fas fa-shopping-bag"></button>`;
 
-      document.body.append(card);
+      showBooks.append(card);
   });
 }
 
