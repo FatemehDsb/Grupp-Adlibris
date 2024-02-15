@@ -2,8 +2,8 @@
 
 
 body{
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     
 }
@@ -15,10 +15,24 @@ body{
     flex-direction: row;
     justify-content: space-around;
 
+
     .filter-box{
+
         width: 20%;
         border: 1px solid black;
         height: 200px;
+
+
+        .filter-header-category{
+            background-color: gray;
+            font-size: 10px;
+            
+        }
+        .filter-category{
+           border: 1px solid gray;
+           font-size: 10px;
+
+        }
     }
     
     .search-result-box{
