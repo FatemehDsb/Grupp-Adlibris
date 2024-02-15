@@ -1,5 +1,3 @@
-// import { default as books} from '.booksModule.js';
-
 const bookCollection = {
   books: [
     { image: "image-url1.jpg", title: "The Secret of Dreams", author: "Alex Reed", price: 150 },
