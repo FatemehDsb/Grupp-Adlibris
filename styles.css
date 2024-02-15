@@ -58,11 +58,35 @@ body {
     align-items: flex-end;
   }
   
-  .book-cover {
+  
+.book-cover {
     height: 300px;
     width: 200px;
     object-fit: cover;
     object-position: center;
+  }
+  .book-title {
+      font-family: sans-serif;
+      font-size: 16px;
+  }
+  .book-author {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  .buy-link-button {
+    font-family: sans-serif;
+    background-color: #ed1c24;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 58px;
+    padding: 15px 2px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
   }
   
   .discount-banner {
