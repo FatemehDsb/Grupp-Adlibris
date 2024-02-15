@@ -1,3 +1,4 @@
+let searchResultBox = document.querySelector(".search-results") ;
 const bookCollection = {
   books: [
     { image: "image-url1.jpg", title: "The Secret of Dreams", author: "Alex Reed", price: 150 },
@@ -20,6 +21,7 @@ let displayBookCards = () => {
 
   selectedBooks.forEach(book => {
     let card = document.createElement("div");
+    card.style.fontSize="11px";
     
     card.innerHTML = `
       <img src="${book.image}" alt="${book.title}">
@@ -27,7 +29,7 @@ let displayBookCards = () => {
       <p>${book.author}</p>
       <button>${book.price} kr </button>`;
 
-      document.body.append(card);
+      searchResultBox.append(card);
   });
 }
 
